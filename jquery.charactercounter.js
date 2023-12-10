@@ -19,9 +19,9 @@
     }
 
     CharacterCounter.DEFAULTS = {
-        elementClass: "me-character-counter",
-        validClass: "me-character-counter_valid",
-        invalidClass: "me-character-counter_invalid",
+        elementClass: "character-counter",
+        validClass: "character-counter-valid",
+        invalidClass: "character-counter-invalid",
         maxChars: Infinity,                 // Maximum allowed characters
         minChars: 0,                        // Minimum allowed characters
         counterElement: null,               // Element to use for counter. If null, creates one.

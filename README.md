@@ -1,4 +1,4 @@
-# jQuery Character Counter Plugin
+# jQuery Character Counter
 
 This jQuery plugin provides the ability to associate a character counter with a text area and includes the ability to customise the style and wording of the counter, along with rules for validity.
 
@@ -8,14 +8,14 @@ This jQuery plugin provides the ability to associate a character counter with a 
 
 You can install the plugin using NPM or Bower.
 
-    npm install jquery-charactercounter-plugin
-    bower install jquery-charactercounter-plugin
+    npm install jquery-charactercounter
+    bower install jquery-charactercounter
 
 ### Manually
 
 If you'd prefer to install manually, download and include the `jquery.charactercounter.js` file in your project.
 
-    <script src="jquery.charactercounter.js"></script>
+    <script src="jquery.charactercounter.min.js"></script>
 
 Ensure jQuery is also available and included before the plugin JS file.
 
@@ -87,9 +87,9 @@ The plugin applies some classes which you're able to target in your CSS to make 
 
 | State | Class
 | ----- | -----
-| Character count element (always applied) | `me-character-counter`
-| Valid modifier - i.e. count is within any set minimum and maximums | `me-character-counter_valid`
-| Invalid modifier - i.e. count is outside any set minimum and maximums | `me-character-counter_invalid`
+| Character count element (always applied) | `character-counter`
+| Valid modifier - i.e. count is within any set minimum and maximums | `character-counter-valid`
+| Invalid modifier - i.e. count is outside any set minimum and maximums | `character-counter-invalid`
 
 The plugin will not add any styling of its own, and simply swaps out the classes depending on its state. Style however you like.
 
@@ -110,9 +110,9 @@ These options can be specified to customise the behaviour of the character count
 
 | Option | Description | Default
 | ------ | ----------- | -------
-| `elementClass` | Class assigned to the character count element. | `"me-character-counter"`
-| `validClass` | Class applied to the character counter (in addition to the `elementClass` value) when it is in a valid state. | `"me-character-counter_valid"`
-| `invalidClass` | Class applied to the character counter (in addition to the `elementClass` value) when it is in an invalid state. | `"me-character-counter_invalid"`
+| `elementClass` | Class assigned to the character count element. | `"character-counter"`
+| `validClass` | Class applied to the character counter (in addition to the `elementClass` value) when it is in a valid state. | `"character-counter-valid"`
+| `invalidClass` | Class applied to the character counter (in addition to the `elementClass` value) when it is in an invalid state. | `"character-counter-invalid"`
 | `maxChars` | Maximum allowed characters before being considered invalid. | `Infinity`
 | `minChars` | Minimum number of characters allowed before being considered invalid. | `0` 
 | `counterElement` | Element to use for the character counter. If `null`, one is created. | `null`
